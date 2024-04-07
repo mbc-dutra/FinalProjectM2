@@ -1,3 +1,7 @@
+:root {
+    --main-gradient: linear-gradient(to right, #dc6262, #f74bab , #c640d0);
+}
+
 body {
     font-family: 'Arial Black', sans-serif;
     margin: 0;
@@ -6,7 +10,7 @@ body {
 }
 
 #title{
-    background: linear-gradient(to right, #dc6262, #f74bab , #c640d0);
+    background: var(--main-gradient);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -34,7 +38,7 @@ nav a {
 }
 
 .navBar{
-        background: linear-gradient(to bottom, #c640d0 ,#dc6262 );
+        background: var(--main-gradient);
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
