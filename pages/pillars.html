@@ -6,6 +6,7 @@
     <title>Pilares da Cultura</title>
     <link rel="icon" href="../assets/skate-logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="../style/styles.css" />
+    <link rel="stylesheet" href="../style/pillars-style.css">
   </head>
   <body>
     <header>
@@ -25,11 +26,51 @@
         movimento Hip-Hop, estabeleceu os quatro pilares essenciais dessa
         cultura: rap (música), Disc jockey (animador), breakdance (dança),
         graffiti (arte) e, beatbox (instrumental) [7] Outros elementos incluem o
-        MC, a moda hip hop e as gírias.
+        MC, a moda hip hop, o skate(mais recente) e as gírias.
+        <br><br>
+        Clique nos cards abaixo para saber um pouco mais sobre os quatro pilares essenciais! 
       </p>
+      <div class="container">
+
+        <div class="flashcard" id="flashcard" onclick="flipCard1()">
+          <div class="front" id="frontCard1">
+            <img src="../assets/Rap-pillar.jpeg" alt="Rap" />
+          </div>
+          <div class="back" id="backCard1" style="display: none">
+            Música com rimas sobre ritmo. Originou-se nos EUA nos anos 70, abordando temas sociais e culturais.
+          </div>
+        </div>
+        <div class="flashcard" id="flashcard" onclick="flipCard2()">
+          <div class="front" id="frontCard2">
+            <img src="../assets/DJ-pillar.jpg" alt="Disc Jockey(DJ)" />
+          </div>
+          <div class="back" id="backCard2" style="display: none">
+            Artista que toca músicas em eventos ao vivo, cria mixagens e interage com o público, crucial na cultura hip-hop.
+          </div>
+        </div>
+        <div class="flashcard" id="flashcard" onclick="flipCard3()">
+          <div class="front" id="frontCard3">
+            <img src="../assets/Breakdance-pillar.jpg" alt="Breakdance" />
+          </div>
+          <div class="back" id="backCard3" style="display: none">
+            Dança urbana com movimentos acrobáticos e improvisados, parte integrante da cultura hip-hop, popularizada nos anos 70.
+          </div>
+        </div>
+        <div class="flashcard" id="flashcard" onclick="flipCard4()">
+          <div class="front" id="frontCard4">
+            <img src="../assets/graffiti-pillar.jpg" alt="Graffiti" />
+          </div>
+          <div class="back" id="backCard4" style="display: none">
+            Arte visual em espaços públicos, originada nos anos 60, associada à cultura hip-hop e usada para expressão social e política.
+          </div>
+        </div>
+
+      </div>
+  
     </section>
     <footer>
       <p>&copy; 2024 Freestyle Flow. Todos os direitos reservados.</p>
     </footer>
+    <script src="../script.js"></script>
   </body>
 </html>

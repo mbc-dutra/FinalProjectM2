@@ -43,8 +43,6 @@ nav {
 
 nav a {
   text-decoration: none;
-
-
 }
 
 .navBar {
@@ -88,4 +86,21 @@ h2, h3, h4, h5 {
 .history-image {
     display: flex;
     width: 30rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background:  #241631; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b0d50;  
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:  #c640d0;
 }
