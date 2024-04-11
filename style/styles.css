@@ -23,7 +23,39 @@ h1 {
     width: 5rem;
 }
 
-header {
+header#start {
+  background-color: #241631;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px
+}
+
+header#history{
+  background-color: #241631;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px
+}
+
+header#socialimpact {
+  background-color: #241631;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px
+}
+
+header#personalities {
+  background-color: #241631;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px
+}
+
+header#pillars {
   background-color: #241631;
   display: flex;
   justify-content: space-around;
@@ -52,13 +84,32 @@ nav a {
   color: transparent;
 }
 
-section {
+section#history {
   padding: 20px;
   margin: 20px;
   text-align: center;
 }
 
-footer {
+section#socialimpact {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+section#personalities {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+
+section#pillars {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+footer#footerall{
   background-color: #241631;
   color: #fff;
   text-align: center;
@@ -71,10 +122,26 @@ p {
   color: white;
 }
 
-h2, h3, h4, h5 {
+h2#history{
   color: var(--pink);
   font-size: 1.6rem;
 }
+
+h3#pillarscult {
+  color: var(--pink);
+  font-size: 1.6rem;
+}
+
+h4#socialimpact {
+  color: var(--pink);
+  font-size: 1.6rem;
+}
+
+h5#personalities {
+  color: var(--pink);
+  font-size: 1.6rem;
+}
+
 
 .history-image-container {
     margin-top: 2rem;
@@ -103,4 +170,10 @@ h2, h3, h4, h5 {
 
 ::-webkit-scrollbar-thumb:hover {
   background:  #c640d0;
+}
+
+
+div#start-text{
+
+ text-align: center;
 }
