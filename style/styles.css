@@ -3,7 +3,11 @@
   --pink: #e718b3;
 }
 
-body{
+html {
+  overflow-x: hidden;
+}
+
+body {
   font-family: "Arial Black", sans-serif;
   margin: 0;
   padding: 0;
@@ -12,15 +16,13 @@ body{
 
 #title {
   background: var(--main-gradient);
-  -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  width: 100%;
+  margin-right: 2rem;
 }
 
 h1 {
-    margin: 0;
-    width: 5rem;
+  margin: 0;
 }
 
 header#start {
@@ -28,15 +30,13 @@ header#start {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px
 }
 
-header#history{
+header#history {
   background-color: #241631;
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px
 }
 
 header#socialimpact {
@@ -44,7 +44,7 @@ header#socialimpact {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px
+  padding: 10px;
 }
 
 header#personalities {
@@ -52,7 +52,7 @@ header#personalities {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px
+  padding: 10px;
 }
 
 header#pillars {
@@ -60,7 +60,7 @@ header#pillars {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px
+  padding: 10px;
 }
 
 nav {
@@ -68,6 +68,7 @@ nav {
   padding: 10px;
   display: flex;
   justify-content: center;
+  align-items: baseline;
   text-align: center;
   width: 100%;
   gap: 2rem;
@@ -78,16 +79,26 @@ nav a {
 }
 
 .navBar {
-  background: var(--main-gradient);
-  -webkit-background-clip: text;
+  background: var(--main-gradient); 
   background-clip: text;
   color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section#history {
   padding: 20px;
   margin: 20px;
   text-align: center;
+}
+
+#history-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding-inline: 10%;
 }
 
 section#socialimpact {
@@ -102,14 +113,13 @@ section#personalities {
   text-align: center;
 }
 
-
 section#pillars {
   padding: 20px;
   margin: 20px;
   text-align: center;
 }
 
-footer#footerall{
+footer#footerall {
   background-color: #241631;
   color: #fff;
   text-align: center;
@@ -120,60 +130,66 @@ footer#footerall{
 
 p {
   color: white;
+  margin: 0px;
 }
 
-h2#history{
+h2#history,
+h3#pillarscult,
+h4#socialimpact,
+h5#personalities 
+ {
   color: var(--pink);
   font-size: 1.6rem;
 }
-
-h3#pillarscult {
-  color: var(--pink);
-  font-size: 1.6rem;
-}
-
-h4#socialimpact {
-  color: var(--pink);
-  font-size: 1.6rem;
-}
-
-h5#personalities {
-  color: var(--pink);
-  font-size: 1.6rem;
-}
-
 
 .history-image-container {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .history-image {
-    display: flex;
-    width: 30rem;
+  display: flex;
+  max-width: 25rem;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
+div#start-text {
+  text-align: center;
 }
 
-::-webkit-scrollbar-track {
-  background:  #241631; 
+.text-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: start;
+  justify-content: flex-start;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #4b0d50;  
+.text-container p {
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: justify;
+  align-self: center;
+
+}
+
+.div-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40rem;
+  height: 18rem;
   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background:  #c640d0;
+#jockey-wall {
+  background-image: url("../assets/Muro_jockey.jpg");
 }
 
+#boombox {
+  background-image: url("../assets/boombox.jpg");
+}
 
-div#start-text{
-
- text-align: center;
+.title-history {
+  margin-top: 1.2rem;
 }
