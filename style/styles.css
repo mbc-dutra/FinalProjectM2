@@ -99,6 +99,7 @@ section#history {
   gap: 1.5rem;
   align-items: center;
   padding-inline: 10%;
+  margin-bottom: 2rem;
 }
 
 section#socialimpact {
